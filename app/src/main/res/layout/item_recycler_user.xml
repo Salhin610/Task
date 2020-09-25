@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/user_bg"
+    android:layout_margin="@dimen/_10ssp"
+
+    >
+
+    <LinearLayout
+        android:id="@+id/Data"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5ssp"
+        android:orientation="vertical"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="@string/UserName"
+                android:textColor="@color/TitlesColor">
+
+            </TextView>
+
+            <TextView
+
+                android:id="@+id/UserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/Black">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1ssp"
+            android:background="@color/colorPrimary">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="@string/Age"
+                android:textColor="@color/TitlesColor">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/Age"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/Black">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1ssp"
+            android:background="@color/colorPrimary">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="@string/JobTitle"
+                android:textColor="@color/TitlesColor">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/JobTitle"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/Black">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1ssp"
+            android:background="@color/colorPrimary">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="@string/Gender"
+                android:textColor="@color/TitlesColor">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/Gender"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/Black">
+
+            </TextView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

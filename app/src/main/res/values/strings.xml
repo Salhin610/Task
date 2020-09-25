@@ -1,3 +1,16 @@
 <resources>
-    <string name="app_name">MadarTask</string>
+    <string name="app_name">Ahmed Aly Task</string>
+    <string name="UserName">User name</string>
+    <string name="Age">Age</string>
+    <string name="JobTitle">Job title</string>
+    <string name="Gender">Gender</string>
+    <string name="Save">Save</string>
+    <string name="ExistingUsers">Exsisting users</string>
+
+    <string name="UserNameError">You should enter user name</string>
+    <string name="AgeError">You should enter  age</string>
+    <string name="JobTitleError">You should enter job title</string>
+    <string name="UserAdded">User added successfully</string>
+    <string name="NoSavedUsers">No saved users</string>
+
 </resources>

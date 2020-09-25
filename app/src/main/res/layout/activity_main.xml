@@ -1,10 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".Ui.FirstScreen.FirstScreen"
     >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_15ssp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <EditText
+
+            android:id="@+id/UserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/UserName">
+
+        </EditText>
+        <EditText
+
+            android:inputType="number"
+            android:id="@+id/Age"
+            android:maxLength="2"
+            android:layout_marginTop="@dimen/_15ssp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Age">
+
+        </EditText>
+        <EditText
+
+            android:id="@+id/JobTitle"
+            android:layout_marginTop="@dimen/_15ssp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/JobTitle">
+
+        </EditText>
+
+        <org.angmarch.views.NiceSpinner
+            android:id="@+id/Gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </org.angmarch.views.NiceSpinner>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/Save"
+            android:background="@color/FirstColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/Save">
+
+        </Button>
+
+        <Button
+
+            android:id="@+id/ExsitingUsers"
+            android:textAllCaps="false"
+            android:background="@color/SecondColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/ExistingUsers">
+
+        </Button>
+    </LinearLayout>
 
 
 
