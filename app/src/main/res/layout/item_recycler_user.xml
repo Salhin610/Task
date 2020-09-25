@@ -38,6 +38,7 @@
 
             <TextView
 
+                android:textDirection="ltr"
                 android:id="@+id/UserName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -71,6 +72,7 @@
 
             <TextView
                 android:id="@+id/Age"
+                android:textDirection="ltr"
 
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -104,6 +106,7 @@
 
             <TextView
                 android:id="@+id/JobTitle"
+                android:textDirection="ltr"
 
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -137,6 +140,7 @@
 
             <TextView
                 android:id="@+id/Gender"
+                android:textDirection="ltr"
 
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

@@ -2,13 +2,19 @@ package com.madar.task.Ui.FirstScreen;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.res.Configuration;
+import android.content.res.Resources;
+import android.os.Build;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
@@ -24,6 +30,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Locale;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -51,7 +58,6 @@ public class FirstScreen extends AppCompatActivity {
 
     private FirstScreenViewModel firstScreenViewModel;
 
-    UsersDataBase usersDataBase;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -63,7 +69,6 @@ public class FirstScreen extends AppCompatActivity {
 
             getSupportActionBar().setTitle("Add User");
         GenderVal.attachDataSource(GenderList);
-         usersDataBase = UsersDataBase.getInstance(this);
 
 
         firstScreenViewModel.UserNameError.observe(this, new Observer<Boolean>() {
@@ -91,8 +96,6 @@ public class FirstScreen extends AppCompatActivity {
             public void onChanged(Boolean aBoolean) {
                 if (getApplicationContext() != null)
                     Toast.makeText(getApplicationContext(), R.string.JobTitle, Toast.LENGTH_LONG).show();
-
-
 
             }
         });
@@ -122,5 +125,8 @@ public class FirstScreen extends AppCompatActivity {
                 break;
         }
     }
+
+
+
 
 }
